@@ -23,6 +23,7 @@ body {
     background: white;
     color: #000;
     font-size: 18px;
+    width: 100vw;
 }
 
 .header {
@@ -32,6 +33,12 @@ body {
     background-color: hsl(193, 100%, 96%);
     margin-bottom: 100px;
     width: 100vw;
+}
+
+@media (max-width: 1000px) {
+    .header {
+       margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -81,6 +88,12 @@ body {
     align-items: center;
 }
 
+@media (max-width: 1000px) {
+    .header-row-two {
+        padding: 0;
+    }
+}
+
 @media (max-width: 600px) {
     .header-row-two {
         flex-direction: column;
@@ -111,6 +124,13 @@ body {
     font-weight: 900;
 }
 
+@media (max-width: 1000px) {
+    .header__heading {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 600px) {
     .header__heading {
         font-size: 23px;
@@ -126,11 +146,15 @@ body {
     font-weight: 500;
 }
 
+@media (max-width: 1000px) {
+    .header__paragraph {
+        font-size: 15.5px;
+    }
+}
+
 @media (max-width: 600px) {
     .header__paragraph {
         font-size: 14px;
-        font-weight: 500;
-        margin-bottom: 30px;
     }
 }
 
@@ -142,6 +166,16 @@ body {
     border-radius: 30px;
     text-decoration: none;
     text-transform: capitalize;
+}
+
+@media (max-width: 1000px) {
+    .header__link-description {
+        margin: 0 auto;
+        padding: 10px 30px;
+        font-size: 14px;
+        word-spacing: 1.5px;
+        letter-spacing: 1px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -164,6 +198,12 @@ body {
     position: relative;
 }
 
+@media (max-width: 1000px) {
+    .main {
+        padding: 5px 10px;
+    }
+}
+
 @media (max-width: 600px) {
     .main {
         padding: 5px 20px;
@@ -177,6 +217,13 @@ body {
     margin: 75px 100px;
     border-radius: 20px;
     box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.1);
+}
+
+@media (max-width: 1000px) {
+    .section-one, .section-two, .section-three {
+        margin: 50px 40px;
+        padding: 25px 50px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -309,6 +356,14 @@ body {
     transform: translateX(-50%);
 }
 
+@media (max-width: 1000px) {
+    .article {
+        top: 104%;
+        padding: 40px 10px;
+        width: 70%;
+    }
+}
+
 @media (max-width: 600px) {
     .article {
         top: 104%;
@@ -317,12 +372,20 @@ body {
     }
 }
 
+
 .article__paragraph {
     text-transform: capitalize;
     font-size: 30px;
     font-weight: 700;
     font-family: poppins;
     margin-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+    .article__paragraph {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -357,6 +420,13 @@ body {
     color: white;
     padding: 120px 75px 30px 120px;
     font-family: 'Open sans';
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        padding: 120px 50px 20px 50px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -388,30 +458,38 @@ body {
 .footer__content-info {
     width: 46%;
     padding-right: 150px;
-    margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+    .footer__content-info {
+        width: 60%;
+        padding-right: 50px;
+    }
 }
 
 @media (max-width: 600px) {
     .footer__content-info {
         width: 100%;
         padding: 0;
+        margin-bottom: 40px;
     }
 }
 
 .footer-access {
     display: flex;
-    align-items: top;
+    align-items: flex-start;
     margin-bottom: 15px;
+    line-height: 1.7;
 }
 
 .footer-access img {
     height: 12px;
     margin-right: 20px;
+    margin-top: 7px;
 }
 
 .footer-access span {
     font-size: 14px;
-    line-height: 1.7;
 }
 
 .footer__content-list {
@@ -439,7 +517,7 @@ body {
 }
 
 .footer__content-socials {
-    width: 18%;
+    width: 17%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -468,26 +546,27 @@ body {
 }
 
 .icon {
-    display: inline;
-    width: 25px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
     margin-right: 10px;
     color: white;
     border: 1px solid white;
-    padding: 15px;
-    text-align: left;
+    padding: 8px;
+    text-align: center;
     border-radius: 50%;
+    transform: scale(0.8);
 }
 
 @media (max-width: 600px) {
     .icon {
-        width: 8px;
-        height: 6px;
-        padding: 4px;
+        margin-right: 6px;
+        transform: scale(0.6);
     }
 }
 
 .footer-foot {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 @media (max-width: 600px) {
