@@ -116,7 +116,7 @@ body {
     flex: 0 0 35%;
     margin-right: 8%;
 
-    animation: MoveInBottom 2s ease-out 2s;
+    animation: MoveInBottom 2s ease-out .75s;
 }
 
 @keyframes MoveInBottom {
@@ -227,7 +227,7 @@ body {
 
 .header__img {
     width: 100%;
-    animation: MoveInTop 2s ease-out 2s;
+    animation: MoveInTop 2s ease-out .75s;
 }
 
 @keyframes MoveInTop {
